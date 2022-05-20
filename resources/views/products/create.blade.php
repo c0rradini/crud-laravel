@@ -12,21 +12,20 @@
         @csrf
         <label for="">Nome</label>
         <br>
-        <input type="text" name="name">
+        <input type="text" name="name" value="{{old('name')}}">
         <br>
         <label for="">Preço de custo</label>
         <br>
-        <input type="text" name="price_cost">
+        <input type="text" name="price_cost" value="{{old('name')}}">
         <br>
         <label for="">Preço de Venda</label>
         <br>
-        <input type="text" name="price_sale">
+        <input type="text" name="price_sale" value="{{old('name')}}">
         <br><label for="">Quantidade</label>
         <br>
-        <input type="text" name="qtde">
+        <input type="text" name="qtde" value="{{old('name')}}">
         <br>
         <button>Salvar</button>
-
 
     </form>
 </body>
