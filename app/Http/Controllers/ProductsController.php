@@ -7,6 +7,15 @@ use Illuminate\Http\Request;
 
 class ProductsController extends Controller
 {
+
+    public function index()
+    {
+        $products = Product::get();
+
+        return view('products.index', compact('products'));
+
+    }
+
     public function create()
     {
         return view('products.create');
@@ -68,4 +77,5 @@ class ProductsController extends Controller
 
         return "Produto excluido com Sucesso!";
     }
+
 }
